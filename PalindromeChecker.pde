@@ -28,8 +28,6 @@ public boolean palindrome(String word)
     if(Character.isLetter(word.charAt(i)))
       flip += word.substring(i, i + 1);
   }
-  if(orig.toLowerCase().equals(flip.toLowerCase()))
-    return true;
-  return false;
+  return orig.toLowerCase().equals(flip.toLowerCase());
 }
 
